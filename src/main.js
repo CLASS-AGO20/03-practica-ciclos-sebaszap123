@@ -26,9 +26,18 @@ export default class App {
 
     console.log(result);
   }
+  elevar(numero, potencia) {
+    let resultado = 1;
+    for(let i = 1; i <= potencia; i++ ) {
+      resultado = resultado * numero
+    }
+    return resultado
+  }
 }
 
 let app = new App();
 
 console.log(app.factorial(10));
 console.log(app.convertirAString(10))
+
+console.log(app.elevar(2, 3));
